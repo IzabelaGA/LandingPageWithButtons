@@ -60,7 +60,7 @@ body {
     padding: 2rem 0;
 }
 
-.btn {
+.btn ,.btn-dark{
     display: inline-block;
     padding: 1rem 2rem;
     background: #f4f4f4;
