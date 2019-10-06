@@ -10,7 +10,7 @@
     --page-3-color: teal;
     --page-4-color: slateblue;
     --photo-color: #fff;
-    --animate-speed: 1s;
+    --animate-speed: 2s;
 
 }
 
@@ -98,3 +98,30 @@ body {
     justify-content: center;
     margin: 0 auto;
 }
+
+/* Page animation */
+#page-1 h1 {
+    transform: translateY(-1200px);
+    animation: heading var(--animate-speed) forwards ease-in;
+}
+
+#page-1 p {
+    transform: translateX(-1900px);
+    animation: paragraph var(--animate-speed) 2s forwards ease-in;
+}
+
+/* Keyframes */
+@keyframes heading {
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes paragraph {
+    to {
+        transform: translateX(0);
+    }
+}
+
+
+
