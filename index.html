@@ -13,80 +13,88 @@
 <body>
     <!-- Page 1 -->
     <section id="page-1" class="page">
-        <h1>Welcome to my presentation</h1>
+        <h1>Impression of beautiful things</h1>
         <p>The artist is the creator of beautiful things. To reveal art and conceal the artist is art’s aim. The critic
             is he who can translate into another manner or a new material his impression of beautiful things. The
             highest as the lowest form of criticism is a mode of autobiography.</p>
-        <div><a href="#page-2" class="btn">Next Page <i class="fas fa-arrow-circle-down"></i></a>
-            <a href="#img-1" class=" btn-dark">View Shoots <i class="fas fa-arrow-circle-right"></i></a>
+        <div><a href="#page-2" class="btn btn-smooth">Next Page <i class="fas fa-arrow-circle-down"></i></a>
+            <a href="#img-1" class="btn btn-dark">View Shoots <i class="fas fa-arrow-circle-right"></i></a>
         </div>
     </section>
 
     <!-- page 2 -->
     <section id="page-2" class="page">
-        <h1>Page 2</h1>
+        <h1>Find beauty</h1>
         <p>Those who find ugly meanings in beautiful things are corrupt without being charming. This is a fault. Those
             who find beautiful meanings in beautiful things are the cultivated. For these there is hope. They are the
             elect to whom beautiful things mean only beauty.</p>
-        <div><a href="#page-1" class="btn btn-dark">Prev Page <i class="fas fa-arrow-circle-up"></i></a>
-            <a href="#page-3" class="btn">Next Page <i class="fas fa-arrow-circle-down"></i></a>
+        <div>
+            <a href="#page-3" class="btn btn-smooth">Next Page <i class="fas fa-arrow-circle-down"></i></a>
+            <a href="#page-1" class="btn btn-dark btn-smooth">Prev Page <i class="fas fa-arrow-circle-up"></i></a>
+
         </div>
 
     </section>
     <!-- page 3 -->
     <section id="page-3" class="page">
-        <h1>Page 3</h1>
+        <h1>Books, XIX century and... Caliban</h1>
         <p>There is no such thing as a moral or an immoral book. Books are well written, or badly written. That is all.
             The nineteenth-century dislike of realism is the rage of Caliban seeing his own face in a glass. The
             nineteenth-century dislike of romanticism is the rage of Caliban not seeing his own face in a glass.</p>
         <div>
-            <a href="#page-2" class="btn btn-dark">Prev Page <i class="fas fa-arrow-circle-up"></i></a>
-            <a href="#page-4" class="btn">Next Page <i class="fas fa-arrow-circle-down"></i></a>
+            <a href="#page-4" class="btn btn-smooth">Next Page <i class="fas fa-arrow-circle-down"></i></a>
+            <a href="#page-2" class="btn btn-dark btn-smooth">Prev Page <i class="fas fa-arrow-circle-up"></i></a>
+
         </div>
     </section>
     <!-- page 4 -->
     <section id="page-4" class="page">
-        <h1>Page 4</h1>
+        <h1>Morality, proof and ethical sympathies</h1>
         <p>The moral life of man forms part of the subject matter of the artist, but the morality of art consists in the
             perfect use of an imperfect medium. No artist desires to prove anything. Even things that are true can be
             proved. No artist has ethical sympathies. An ethical sympathy in an artist is an unpardonable mannerism of
             style.</p>
         <div>
-            <a href="#page-3" class="btn btn-dark">Prev Page <i class="fas fa-arrow-circle-up"></i></a>
-            <a href="#page-1" class="btn">First Page <i class="fas fa-arrow-circle-up"></i></a>
+            <a href="#img-1" class="btn btn-dark">View Shoots <i class="fas fa-arrow-circle-right"></i></a>
+            <a href="#page-1" class="btn btn-smooth">First Page <i class="fas fa-arrow-circle-up"></i></a>
         </div>
     </section>
     <!-- Photo 1 -->
     <section id="img-1">
         <div class="img"><img src="./img/img1.jpg" alt="tree">
-            <div><a href="#page-1" class="btn"><i class="fas fa-arrow-circle-left"></i> Prev Page </a>
-                <a href="#img-2" class="btn btn-dark">Next Shoot <i class="fas fa-arrow-circle-right"></i></a>
+            <div>
+                <a href="#page-1" class="btn"><i class="fas fa-arrow-circle-left"></i> Prev Page </a>
+                <a href="#img-2" class="btn btn-dark btn-smooth">Next Shoot <i class="fas fa-arrow-circle-right"></i></a>
             </div>
         </div>
     </section>
     <!-- Photo 2 -->
     <section id="img-2">
         <div class="img"><img src="./img/img2.jpg" alt="sea">
-            <div><a href="#page-1" class="btn"><i class="fas fa-arrow-circle-left"></i> Prev Page </a>
-                <a href="#img-3" class="btn btn-dark">Next Shoot <i class="fas fa-arrow-circle-right"></i></a>
+            <div>
+                <a href="#page-1" class="btn"><i class="fas fa-arrow-circle-left"></i> Prev Page </a>
+                <a href="#img-3" class="btn btn-dark btn-smooth">Next Shoot <i class="fas fa-arrow-circle-right"></i></a>
             </div>
         </div>
     </section>
     <!-- Photo 3 -->
     <section id="img-3">
         <div class="img"><img src="./img/img3.jpg" alt="sea">
-            <div><a href="#page-1" class="btn"><i class="fas fa-arrow-circle-left"></i> Prev Page </a>
-                <a href="#img-1" class="btn btn-dark"><i class="fas fa-arrow-circle-left"></i> Prev Shoot </a>
+            <div>
+                <a href="#img-1" class="btn btn-dark btn-smooth"><i class="fas fa-arrow-circle-left"></i> Prev Shoot </a>
+                <a href="#page-1" class="btn"><i class="fas fa-arrow-circle-left"></i> Prev Page </a>
+
             </div>
         </div>
     </section>
+
     <!-- JQuery CDN -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
     <!-- //   Smoth Scrolling -->
     <script>
-        $('.btn').on('click', function (event) {
+        $('.btn-smooth').on('click', function (event) {
             if (this.hash !== '') {
                 event.preventDefault();
 
